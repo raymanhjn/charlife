@@ -1,8 +1,26 @@
-const css= require('./app.css');
+import './style.css';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('root')
+import Store from '../src/store/store';
+import routes from '../src/routes';
+import App from './components/app';
+
+const Root = () => {
+	return (
+		<div>
+			<Provider store={Store}>
+				<Router>
+					<App />
+				</Router>
+			</Provider>
+		</div>
+	);
+}
+
+render(
+	<Root />,
+	document.getElementById('app')
 );
