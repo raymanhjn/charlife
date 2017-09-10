@@ -5,7 +5,9 @@ export default class Header extends Component {
   render() {
     return (
       <header className='header'>
-        <div className='logo'>LOGO</div>
+        <div className='logo'>
+          <img src="https://codyhouse.co/demo/secondary-fixed-navigation/img/cd-logo.svg" alt="Logo" />
+        </div>
         <nav className='primary-nav'>
           <ul>
             <li className='nav-item'><Link to='/'>Home</Link></li>
