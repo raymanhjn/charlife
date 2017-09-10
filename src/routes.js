@@ -8,7 +8,7 @@ import Mail from './components/mail';
 
 export default () => {
   return (
-      <div>
+      <div className='main'>
         <Route exact path="/" component={Home}/>
         <Route path="/foods" component={Foods}/>
         <Route path="/mail" component={Mail}/>

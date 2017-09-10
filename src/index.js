@@ -10,13 +10,11 @@ import App from './components/app';
 
 const Root = () => {
 	return (
-		<div>
-			<Provider store={Store}>
-				<Router>
-					<App />
-				</Router>
-			</Provider>
-		</div>
+		<Provider store={Store}>
+			<Router>
+				<App />
+			</Router>
+		</Provider>
 	);
 }
 
