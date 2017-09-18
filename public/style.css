@@ -51,23 +51,29 @@ div#app {
   color: white;
 }
 
-.nav-item a:hover,link,active {
+.nav-item a:link {
   text-decoration: none;
 }
 
 
 .main {
+  padding-bottom: 70px;
   padding-top: 70px;
   min-height: calc(100vh - 40px);
+  background-color: #f0eee1;
+}
+
+.home-main {
+  margin-top: -70px;
 }
 
 #home-section {
-  margin-top: -70px;
   width: 100%;
-  height: 600px;
+  height: 400px;
   background: url('../images/bento.jpg');
   background-size: cover;
 }
+
 
 #home-section h1 {
   text-align: center;
@@ -78,7 +84,23 @@ div#app {
 
 #home-section button {
   display: block;
-  margin: 10px auto;
+  margin: 30px auto;
+}
+
+.secondary-nav {
+  width: 100%;
+  height: auto;
+  background-color: rgba(3, 13, 24, 0.96);
+}
+.secondary-nav ul {
+  text-align: center;
+  list-style: none;
+}
+
+.secondary-nav .sec-nav-item {
+  display: inline-block;
+  text-decoration: none;
+  padding: 58px 40px 0 40px;
 }
 
 #features {
@@ -94,6 +116,27 @@ div#app {
 #features img {
   width: 80%;
   height: auto;
+}
+
+.foods-main {
+  padding: 50px 15%;
+}
+
+#food-intro {
+  width: 100%;
+  height: 200px;
+  background: url('../images/bento.jpg');
+  background-size: cover;
+}
+
+#food-intro h1 {
+  margin-top: 0;
+  text-align: center;
+  color: white;
+}
+
+.food-section {
+  padding: 40px 15%;
 }
 
 .footer {
